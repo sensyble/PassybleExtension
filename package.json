@@ -18,6 +18,6 @@
     "wasm": "node scripts/build-wasm.mjs"
   },
   "devDependencies": {
-    "jsdom": "^25.0.1"
+    "jsdom": "^31.0.1"
   }
 }
