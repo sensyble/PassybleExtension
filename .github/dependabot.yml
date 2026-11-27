@@ -1,0 +1,24 @@
+# Dependabot version updates, weekly and grouped (one pull request per ecosystem for minor and patch
+# updates; a major update gets its own). Security updates come on their own as soon as an advisory is out,
+# once "Dependabot security updates" is on in the repository's settings (Security, Code security).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 10
+    groups:
+      npm-minor-and-patch:
+        patterns: ["*"]
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      github-actions:
+        patterns: ["*"]
